@@ -1,0 +1,37 @@
+/* Fundo do gráfico e área de plotagem transparentes */
+.chart {
+    -fx-background-color: transparent;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+/* Remove linhas de grade
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+*/
+
+/* Estilo da legenda (transparente) */
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-effect: null; /* Remove sombra */
+}
+
+.chart-legend-item {
+    -fx-background-color: transparent;
+}
+
+/* Cores das barras e símbolos da legenda */
+.chart-bar.series0 { /* Aprovados */
+    -fx-bar-fill: darkgreen;
+}
+.chart-bar.series1 { /* Reprovados */
+    -fx-bar-fill: firebrick;
+}
+.chart-legend-item-symbol.series0 { /* Símbolo "Aprovados" */
+    -fx-background-color: darkgreen;
+}
+.chart-legend-item-symbol.series1 { /* Símbolo "Reprovados" */
+    -fx-background-color: firebrick;
+}

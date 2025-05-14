@@ -1,0 +1,32 @@
+/* Fundo do gráfico e área de plotagem transparentes */
+.chart {
+    -fx-background-color: transparent;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+/* Estilo da legenda (transparente) */
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-effect: null; /* Remove sombra */
+}
+.chart-legend-item {
+    -fx-background-color: transparent;
+}
+
+/* Cores das fatias do PieChart */
+.chart-pie.data0 { /* Média */
+    -fx-pie-color: #134374;
+}
+.chart-pie.data1 { /* Restante */
+    -fx-pie-color: #c3e3fd;
+}
+
+/* Estilo dos símbolos da legenda */
+.chart-legend-item-symbol.data0 {
+    -fx-background-color: #134374;
+}
+.chart-legend-item-symbol.data1 {
+    -fx-background-color: #c3e3fd;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.TelaLoginController">
+    <children>
+        <Pane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Label layoutX="341.0" layoutY="68.0" text="Faça Login para acessar sua conta!" textFill="#134374">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="email" layoutX="254.0" layoutY="191.0" prefHeight="36.0" prefWidth="560.0" promptText="Email">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="257.0" layoutY="164.0" text="E-mail">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="257.0" layoutY="253.0" text="Senha">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="senha" layoutX="254.0" layoutY="280.0" prefHeight="36.0" prefWidth="560.0" promptText="Senha">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+                <Button layoutX="428.0" layoutY="376.0" mnemonicParsing="false" onAction="#botaoClicado" prefHeight="65.0" prefWidth="212.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="Concluir" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Button>
+                <Pane layoutY="-2.0" prefHeight="489.0" prefWidth="212.0" style="-fx-background-color: #134374;">
+               <children>
+                      <ImageView fitHeight="36.0" fitWidth="159.0" layoutX="27.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@/SenaiLogo.png" />
+                          </image>
+                      </ImageView>
+               </children></Pane>
+            <Label fx:id="mensagem" alignment="CENTER" layoutX="370.0" layoutY="331.0" prefHeight="17.0" prefWidth="328.0" textAlignment="CENTER" textFill="RED" />
+            </children>
+        </Pane>
+    </children>
+</VBox>

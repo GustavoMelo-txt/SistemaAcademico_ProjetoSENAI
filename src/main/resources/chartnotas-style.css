@@ -1,0 +1,48 @@
+.chart {
+    -fx-background-color: transparent;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-effect: null; /* Remove sombra */
+}
+
+.chart-bar.series0 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-bar.series1 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-bar.series2 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-bar.series3 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-bar.series4 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-bar.series5 { /* Aprovados */
+    -fx-bar-fill: #134374;
+}
+.chart-legend-item-symbol.series0 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol.series1 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol.series2 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol.series3 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol.series4 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}
+.chart-legend-item-symbol.series5 { /* Símbolo "Aprovados" */
+    -fx-background-color: transparent;
+}

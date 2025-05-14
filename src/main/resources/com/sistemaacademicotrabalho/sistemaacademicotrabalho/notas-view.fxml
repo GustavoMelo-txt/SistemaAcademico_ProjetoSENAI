@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1280.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.NotasController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="1280.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <MenuButton layoutX="252.0" layoutY="135.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="               Disciplinas" textFill="WHITE">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="1035.0" layoutY="133.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="              Turmas" textFill="WHITE">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                            </items>
+                        </MenuButton>
+                        <MenuButton layoutX="643.0" layoutY="134.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="                Alunos" textFill="WHITE">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                            </items>
+                        </MenuButton>
+                        <TableView layoutX="252.0" layoutY="235.0" prefHeight="300.0" prefWidth="967.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-background-radius: 6;">
+                            <columns>
+                                <TableColumn minWidth="0.0" prefWidth="114.0" style="-fx-background-color: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="180.0" style="-fx-background-color: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="153.0" style="-fx-background-color: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="138.0" style="-fx-background-color: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="141.0" style="-fx-background-color: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="106.0" style="-FX-BACKGROUND-COLOR: #134374;" />
+                                <TableColumn minWidth="0.0" prefWidth="133.0" style="-FX-BACKGROUND-COLOR: #134374;" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="644.0" layoutY="613.0" mnemonicParsing="false" onAction="#salvar" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="SALVAR" textFill="WHITE" />
+                        <Button layoutX="252.0" layoutY="613.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="EDITAR" textAlignment="RIGHT" textFill="WHITE" />
+                        <Button layoutX="1035.0" layoutY="613.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #134374; -fx-background-radius: 6px;" text="CANCELAR" textFill="WHITE" />
+                        <Pane prefHeight="688.0" prefWidth="212.0" style="-fx-background-color: #134374;">
+                            <children>
+                                <ImageView fx:id="logoSenai" fitHeight="33.0" fitWidth="158.0" layoutX="27.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/SenaiLogo.png" />
+                                    </image>
+                                </ImageView>
+                                <Button layoutX="41.0" layoutY="170.0" onAction="#botaoTurmas" style="-fx-background-color: #134374;" text="TURMAS" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font></Button>
+                                <Button layoutX="41.0" layoutY="221.0" onAction="#botaoRelatorio" style="-fx-background-color: #134374;" text="RELATÓRIO" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                        <Button layoutX="41.0" layoutY="121.0" mnemonicParsing="false" onAction="#botaoInicio" style="-fx-background-color: #134374;" text="INÍCIO" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </Pane>
+                        <Label layoutX="256.0" layoutY="50.0" text="Notas">
+                            <font>
+                                <Font name="System Italic" size="32.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="273.0" layoutY="240.0" text="MATRÍCULA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="431.0" layoutY="239.0" text="ALUNO" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="558.0" layoutY="239.0" text="NOTAS ATIVIDADES" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="704.0" layoutY="240.0" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="718.0" layoutY="241.0" text="SITUAÇÃO ATUAL" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="857.0" layoutY="240.0" text="CARGA HORARIA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1007.0" layoutY="240.0" text="PROVAS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1107.0" layoutY="240.0" text="FREQUÊNCIAS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                  <TextField fx:id="nota" layoutX="546.0" layoutY="264.0" style="-fx-background-color: transparent;" />
+                  <Label fx:id="matricula" alignment="CENTER" layoutX="255.0" layoutY="266.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+                  <Label fx:id="nomeAluno" alignment="CENTER" layoutX="396.0" layoutY="266.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+                  <Label alignment="CENTER" layoutX="718.0" layoutY="266.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>

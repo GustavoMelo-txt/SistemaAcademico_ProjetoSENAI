@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.CadastroTurmasController">
+    <children>
+        <Pane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <MenuButton fx:id="menuTurno" layoutX="254.0" layoutY="414.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="984.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-width: 1.5px; -fx-border-radius: 3px;" text="Turno" textFill="#cccccc">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Matutino" />
+                        <MenuItem mnemonicParsing="false" text="Vespertino" />
+                        <MenuItem mnemonicParsing="false" text="Noturno" />
+                    </items>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </MenuButton>
+                <Button layoutX="569.0" layoutY="69.0" onAction="#botaoAlunoProfessor" style="-fx-background-color: TRANSPARENT;" text="Aluno/Professor" textFill="#134374">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="828.0" layoutY="69.0" onAction="#botaoClicado" style="-fx-background-color: TRANSPARENT;" text="Turmas" textFill="#134374">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="txtNomeTurma" layoutX="254.0" layoutY="194.0" prefHeight="36.0" prefWidth="984.0" promptText="Nome">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="257.0" layoutY="167.0" text="Nome da Turma">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="257.0" layoutY="279.0" text="Curso">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtCurso" layoutX="254.0" layoutY="306.0" prefHeight="36.0" prefWidth="984.0" promptText="Curso">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="257.0" layoutY="387.0" text="Turno">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="257.0" layoutY="496.0" text="Data de Início">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="774.0" layoutY="496.0" text="Data de Encerramento">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="640.0" layoutY="616.0" mnemonicParsing="false" onAction="#salvarTurma" prefHeight="65.0" prefWidth="212.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="Concluir" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Button>
+                <Line endX="-15.5" layoutX="929.0" layoutY="103.0" startX="-100.0" stroke="#134374" strokeWidth="3.0" />
+                <DatePicker fx:id="dateInicio" layoutX="254.0" layoutY="522.0" prefHeight="36.0" prefWidth="469.0" promptText="Início" />
+                <DatePicker fx:id="dateFim" layoutX="771.0" layoutY="522.0" prefHeight="36.0" prefWidth="469.0" promptText="Encerramento" style="-fx-border-color: #cccccc;" />
+                <Pane layoutY="-2.0" prefHeight="729.0" prefWidth="212.0" style="-fx-background-color: #134374;">
+                    <children>
+                        <Label layoutX="52.0" layoutY="169.0" text="PROFESSORES" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="41.0" layoutY="215.0" onAction="#botaoTurmas" style="-fx-background-color: #134374;" text="TURMAS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="40.0" layoutY="263.0" onAction="#botaoRelatorio" style="-fx-background-color: #134374;" text="RELATÓRIOS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                  <Button layoutX="41.0" layoutY="121.0" mnemonicParsing="false" onAction="#botaoClicado" style="-fx-background-color: #134374;" text="INÍCIO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                    </children></Pane>
+                <ImageView fx:id="logoSenai" fitHeight="33.0" fitWidth="158.0" layoutX="27.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/SenaiLogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</VBox>

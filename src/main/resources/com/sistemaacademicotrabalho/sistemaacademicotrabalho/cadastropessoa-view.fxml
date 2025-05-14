@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.CadastroPessoaController">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="580.0" layoutY="75.0" text="Aluno/Professor" textFill="#134374">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="828.0" layoutY="69.0" onAction="#botaoTurmas" style="-fx-background-color: TRANSPARENT;" text="Turmas" textFill="#134374">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="258.0" layoutY="164.0" text="Tipo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="texto" layoutX="258.0" layoutY="272.0" text="Nome completo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomeCompleto" layoutX="254.0" layoutY="299.0" prefHeight="36.0" prefWidth="984.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="dataNasc" layoutX="886.0" layoutY="414.0" prefHeight="36.0" prefWidth="350.0" promptText="dd/mm/aaaa" style="-fx-border-color: #cccccc;" />
+            <Label layoutX="889.0" layoutY="387.0" text="Data de nascimento">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="258.0" layoutY="489.0" text="Endereço de e-mail">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="640.0" layoutY="616.0" mnemonicParsing="false" onAction="#concluir" prefHeight="65.0" prefWidth="212.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="Concluir" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Line endX="64.0" layoutX="667.0" layoutY="103.0" startX="-100.0" stroke="#134374" strokeWidth="3.0" />
+            <Pane prefHeight="720.0" prefWidth="212.0" style="-fx-background-color: #134374 #134374;">
+               <children>
+                  <ImageView fx:id="logoSenai" fitHeight="33.0" fitWidth="158.0" layoutX="27.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/SenaiLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="40.0" layoutY="117.0" text="INÍCIO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="169.0" text="PROFESSORES" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="218.0" text="CURSOS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="272.0" text="RELATÓRIOS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutY="106.0" mnemonicParsing="false" onAction="#botaoInicio" opacity="0.0" prefHeight="46.0" prefWidth="212.0" text="INICIO" />
+                  <Button layoutY="158.0" mnemonicParsing="false" opacity="0.0" prefHeight="46.0" prefWidth="212.0" />
+                  <Button layoutY="207.0" mnemonicParsing="false" opacity="0.0" prefHeight="46.0" prefWidth="212.0" />
+                  <Button layoutY="261.0" mnemonicParsing="false" onAction="#botaoRelatorio" opacity="0.0" prefHeight="46.0" prefWidth="212.0" text="relatorios" />
+               </children>
+            </Pane>
+            <RadioButton fx:id="botaoAluno" layoutX="260.0" layoutY="197.0" mnemonicParsing="false" text="Aluno">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tipoPessoa" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="botaoProfessor" layoutX="260.0" layoutY="225.0" mnemonicParsing="false" text="Professor" toggleGroup="$tipoPessoa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <MenuButton fx:id="genero" layoutX="558.0" layoutY="414.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="278.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-width: 1.5px; -fx-border-radius: 3px;" text="Selecione" textFill="#cccccc">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#atualizarGenero" text="Masculino" />
+                  <MenuItem mnemonicParsing="false" onAction="#atualizarGenero" text="Feminino" />
+                  <MenuItem mnemonicParsing="false" onAction="#atualizarGenero" text="Não-binário" />
+               </items>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MenuButton>
+            <Label layoutX="562.0" layoutY="387.0" text="Gênero">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="387.0" text="CPF">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cpf" layoutX="255.0" layoutY="414.0" prefHeight="36.0" prefWidth="255.0" promptText="000.000.000-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" layoutX="254.0" layoutY="516.0" prefHeight="36.0" prefWidth="395.0" promptText="exemplo@exemplo.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="telefone1" layoutX="696.0" layoutY="516.0" prefHeight="36.0" prefWidth="247.0" promptText="(00) 00000-0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="telefone2" layoutX="989.0" layoutY="516.0" prefHeight="36.0" prefWidth="247.0" promptText="(00) 00000-0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="700.0" layoutY="489.0" text="Telefone">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="944.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneEspecialidades" layoutX="387.0" layoutY="164.0" prefHeight="96.0" prefWidth="850.0">
+               <children>
+                  <Label layoutX="57.0" layoutY="1.0" text="Especialidades">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="4.0" endY="68.0" layoutX="33.0" layoutY="28.0" startX="4.0" startY="-28.0" />
+                  <TextArea fx:id="especialidades" layoutX="57.0" layoutY="28.0" prefHeight="53.0" prefWidth="793.0" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextArea>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.TurmaController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="1280.0">
+            <content>
+                <Pane prefHeight="893.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#134374" height="894.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="212.0" />
+
+                        <Label layoutX="253.0" layoutY="59.0">
+                            <font>
+                                <Font name="System Italic" size="12.0" />
+                            </font>
+                        </Label>
+
+                        <Label layoutX="283.0" layoutY="83.0" text="Quadro de horários">
+                            <font>
+                                <Font name="System Italic" size="24.0" />
+                            </font>
+                        </Label>
+
+                        <Button layoutX="282.0" layoutY="834.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="208.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="SALVAR" textFill="WHITE" />
+
+                        <Button layoutX="1002.0" layoutY="834.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="208.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="EXCLUIR" textFill="WHITE" translateZ="29.0" />
+
+                        <Button layoutX="674.0" layoutY="834.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="208.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="CANCELAR" textFill="WHITE" />
+
+                        <ImageView fx:id="logoSenai" fitHeight="33.0" fitWidth="158.0" layoutX="27.0" layoutY="33.0">
+                            <image>
+                                <Image url="@/SenaiLogo.png" />
+                            </image>
+                        </ImageView>
+
+                        <Label layoutX="331.0" layoutY="404.0" text="Informática Aplicada">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+
+                        <TableView layoutX="286.0" layoutY="142.0" prefHeight="248.0" prefWidth="923.0">
+                            <columns>
+                                <TableColumn prefWidth="168.0" style="-fx-background-color: #134374;" text="SEGUNDA" />
+                                <TableColumn prefWidth="182.0" style="-fx-background-color: #134374;" text="TERÇA" />
+                                <TableColumn prefWidth="221.0" style="-fx-background-color: #134374;" text="QUARTA" />
+                                <TableColumn prefWidth="207.0" style="-fx-background-color: #134374;" text="QUINTA" />
+                                <TableColumn prefWidth="144.0" style="-fx-background-color: #134374;" text="SEXTA" />
+                            </columns>
+                        </TableView>
+                        <TextField layoutX="268.0" layoutY="26.0" prefHeight="25.0" prefWidth="744.0" promptText="Turma/Aluno" style="-fx-background-radius: 20px;" />
+                        <TextField layoutX="1061.0" layoutY="26.0" prefHeight="26.0" prefWidth="162.0" promptText="Filtro" style="-fx-background-radius: 20px;" />
+                        <MenuButton layoutX="502.0" layoutY="87.0" mnemonicParsing="false" style="-fx-background-radius: 10px;" text="Agosto">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Action 1" />
+                                <MenuItem mnemonicParsing="false" text="Action 2" />
+                            </items>
+                        </MenuButton>
+                        <TableView layoutX="282.0" layoutY="483.0" prefHeight="261.0" prefWidth="930.0">
+                            <columns>
+                                <TableColumn prefWidth="234.0" text="MATRÍCULA" />
+                                <TableColumn prefWidth="611.0" text="ALUNOS" />
+                            </columns>
+                        </TableView>
+                        <Label layoutX="1025.0" layoutY="405.0" text="Banco de Dados">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="677.0" layoutY="404.0" text="Lógica de Programação">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="275.0" layoutY="168.0" prefHeight="25.0" prefWidth="183.0" style="-fx-text-fill: WHITE;" text="                         IA">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3589db" width="169.14" x="10.0" />
+                            </effect>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <TextField layoutX="447.0" layoutY="168.0" prefHeight="25.0" prefWidth="172.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3589db" width="178.79" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="628.0" layoutY="168.0" prefHeight="29.0" prefWidth="188.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3589db" width="218.89" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="848.0" layoutY="168.0" prefHeight="31.0" prefWidth="226.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3589db" width="205.17" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="1057.0" layoutY="168.0" prefHeight="29.0" prefWidth="149.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3589db" width="142.69" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="275.0" layoutY="200.0" prefHeight="29.0" prefWidth="190.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3aa81b" width="169.14" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="448.0" layoutY="200.0" prefHeight="38.0" prefWidth="201.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#3aa81b" width="178.79" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="628.0" layoutY="201.0" prefHeight="31.0" prefWidth="227.0">
+                            <effect>
+                                <ColorInput height="28.31" paint="#d77d00" width="218.89" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="849.0" layoutY="201.0" prefHeight="25.0" prefWidth="235.0">
+                            <effect>
+                                <ColorInput height="28.31" paint="#d77d00" width="205.17" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="1058.0" layoutY="200.0" prefHeight="25.0" prefWidth="159.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#d77d00" width="142.69" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <Text fill="WHITE" layoutX="365.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IA" />
+                        <Text fill="WHITE" layoutX="542.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IA" />
+                        <Text fill="WHITE" layoutX="742.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IA" />
+                        <Text fill="WHITE" layoutX="956.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IA" />
+                        <Text fill="WHITE" layoutX="1131.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IA" />
+                        <Text fill="WHITE" layoutX="364.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LP" />
+                        <Text fill="WHITE" layoutX="541.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LP" />
+                        <Text fill="WHITE" layoutX="741.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BD" />
+                        <Text fill="WHITE" layoutX="954.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BD" />
+                        <Text fill="WHITE" layoutX="1130.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BD" />
+                        <Button layoutX="297.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3589db; -fx-background-radius: 40px;" />
+                        <Button layoutX="643.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3aa81b; -fx-background-radius: 40px;" />
+                        <Button layoutX="989.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #d77d00; -fx-background-radius: 40px;" />
+                        <TextField layoutX="276.0" layoutY="232.0" prefHeight="25.0" prefWidth="183.0" style="-fx-text-fill: WHITE;" text="                         IA">
+                            <effect>
+                                <ColorInput height="29.31" paint="#575757" width="169.14" x="10.0" />
+                            </effect>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <TextField layoutX="448.0" layoutY="231.0" prefHeight="25.0" prefWidth="172.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#575757" width="178.79" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="629.0" layoutY="231.0" prefHeight="29.0" prefWidth="188.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#575757" width="218.89" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="849.0" layoutY="231.0" prefHeight="31.0" prefWidth="226.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#575757" width="205.17" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="1058.0" layoutY="231.0" prefHeight="29.0" prefWidth="149.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#575757" width="142.69" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="276.0" layoutY="263.0" prefHeight="29.0" prefWidth="190.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#a61c81" width="169.14" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="448.0" layoutY="263.0" prefHeight="38.0" prefWidth="201.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#a61c81" width="178.79" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="629.0" layoutY="263.0" prefHeight="31.0" prefWidth="227.0">
+                            <effect>
+                                <ColorInput height="28.31" paint="#d60000" width="218.89" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="850.0" layoutY="263.0" prefHeight="25.0" prefWidth="235.0">
+                            <effect>
+                                <ColorInput height="28.31" paint="#d60000" width="205.17" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <TextField layoutX="1058.0" layoutY="262.0" prefHeight="25.0" prefWidth="159.0">
+                            <effect>
+                                <ColorInput height="29.31" paint="#d60000" width="142.69" x="10.0" />
+                            </effect>
+                        </TextField>
+                        <Text fill="WHITE" layoutX="359.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MS" />
+                        <Text fill="WHITE" layoutX="540.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MS" />
+                        <Text fill="WHITE" layoutX="741.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MS" />
+                        <Text fill="WHITE" layoutX="954.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MS" />
+                        <Text fill="WHITE" layoutX="1129.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MS" />
+                        <Text fill="WHITE" layoutX="353.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RLAD" />
+                        <Text fill="WHITE" layoutX="533.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RLAD" />
+                        <Text fill="WHITE" layoutX="740.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IOT" />
+                        <Text fill="WHITE" layoutX="954.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IOT" />
+                        <Text fill="WHITE" layoutX="1129.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IOT" wrappingWidth="25.998046875" />
+                        <Label layoutX="332.0" layoutY="447.0" text="Modelagem de Sistemas">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="678.0" layoutY="447.0" text="Raciocínio Lógico e Análise de dados">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1023.0" layoutY="447.0" text="Internet das Coisas">
+                            <font>
+                                <Font name="Calibri" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="297.0" layoutY="444.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #575757; -fx-background-radius: 40px;" />
+                        <Button layoutX="644.0" layoutY="444.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #a61c81; -fx-background-radius: 40px;" />
+                        <Button layoutX="990.0" layoutY="444.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #d60000; -fx-background-radius: 40px;" />
+                        <Label layoutX="52.0" layoutY="169.0" text="TURMAS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="40.0" layoutY="212.0" onAction="#botaoRelatorio" style="-fx-background-color: #134374;" text="RELATÓRIOS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="337.0" layoutY="146.0" text="SEGUNDA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="527.0" layoutY="146.0" text="TERÇA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="723.0" layoutY="146.0" text="QUARTA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="934.0" layoutY="146.0" text="QUINTA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="1113.0" layoutY="146.0" text="SEXTA" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                  <Button onAction="#botaoInicio" layoutX="41.0" layoutY="121.0" mnemonicParsing="false" style="-fx-background-color: #134374;" text="INÍCIO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+
+                    </children>
+                </Pane>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemaacademicotrabalho.sistemaacademicotrabalho.TelaInicialInstituicaoController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="1267.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="200.0" layoutX="320.0" layoutY="127.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="-fx-border-radius: 20px; -fx-stroke-line-cap: ROUND;" width="200.0" />
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="200.0" layoutX="948.0" layoutY="127.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="-fx-border-radius: 20px; -fx-stroke-line-cap: ROUND;" width="200.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#134374" height="729.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="212.0" />
+                <Text layoutX="253.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atualizações: " wrappingWidth="123.939453125">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text layoutX="1004.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                    <font>
+                        <Font size="79.0" />
+                    </font>
+                </Text>
+                <Text layoutX="253.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ações:" wrappingWidth="123.939453125">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Button layoutX="328.0" layoutY="429.0" mnemonicParsing="false" onAction="#botaoCadastrarPessoa" prefHeight="69.0" prefWidth="230.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="+ Cadastrar novo aluno" textFill="WHITE" />
+                <Button layoutX="328.0" layoutY="562.0" mnemonicParsing="false" onAction="#cadastrarTurma" prefHeight="69.0" prefWidth="230.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="+ Criar nova turma" textFill="WHITE" />
+                <Button layoutX="863.0" layoutY="429.0" mnemonicParsing="false" onAction="#botaoCadastrarPessoa" prefHeight="69.0" prefWidth="230.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="+ Cadastrar novo professor" textFill="WHITE" />
+                <Button layoutX="863.0" layoutY="562.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="230.0" style="-fx-background-color: #134374; -fx-background-radius: 10px;" text="+ Emitir boletim" textFill="WHITE" />
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="200.0" layoutX="637.0" layoutY="127.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="-fx-border-radius: 20px; -fx-stroke-line-cap: ROUND;" width="200.0" />
+                <Text layoutX="377.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" wrappingWidth="106.171875">
+                    <font>
+                        <Font size="79.0" />
+                    </font>
+                </Text>
+                <Text layoutX="694.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                    <font>
+                        <Font size="79.0" />
+                    </font>
+                </Text>
+                <Text layoutX="369.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL DE ALUNOS" wrappingWidth="102.97395324707031" />
+                <Text layoutX="670.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL DE PROFESSORES" wrappingWidth="145.9739532470703" />
+                <Text layoutX="1004.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TURMAS ATIVAS" wrappingWidth="88.97395324707031" />
+                <ImageView fx:id="logoSenai" fitHeight="33.0" fitWidth="158.0" layoutX="27.0" layoutY="33.0">
+                    <image>
+                        <Image url="@/SenaiLogo.png" />
+                    </image>
+                </ImageView>
+                <Button onAction="#botaoTurmas" layoutX="41.0" layoutY="214.0" style="-fx-background-color: #134374;" text="TURMAS" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button layoutX="41.0" layoutY="266.0" onAction="#botaoRelatorio" style="-fx-background-color: #134374;" text="RELATÓRIOS" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button alignment="BOTTOM_LEFT" layoutX="40.0" layoutY="166.0" onAction="#botaoCadastrarPessoa" style="-fx-background-color: #134374;" text="CADASTROS" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            <Button onAction="#botaoInicio" layoutX="41.0" layoutY="121.0" mnemonicParsing="false" style="-fx-background-color: #134374;" text="INÍCIO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
