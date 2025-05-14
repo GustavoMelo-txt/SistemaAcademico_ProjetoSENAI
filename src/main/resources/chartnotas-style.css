@@ -1,48 +1,60 @@
 .chart {
     -fx-background-color: transparent;
 }
+
 .chart-plot-background {
     -fx-background-color: transparent;
 }
 
 .chart-legend {
     -fx-background-color: transparent;
-    -fx-effect: null; /* Remove sombra */
+    -fx-effect: null; 
 }
 
-.chart-bar.series0 { /* Aprovados */
+.chart-bar.series0 {
     -fx-bar-fill: #134374;
 }
-.chart-bar.series1 { /* Aprovados */
+
+.chart-bar.series1 {
     -fx-bar-fill: #134374;
 }
-.chart-bar.series2 { /* Aprovados */
+
+.chart-bar.series2 {
     -fx-bar-fill: #134374;
 }
-.chart-bar.series3 { /* Aprovados */
+
+.chart-bar.series3 { 
     -fx-bar-fill: #134374;
 }
-.chart-bar.series4 { /* Aprovados */
+
+.chart-bar.series4 { 
     -fx-bar-fill: #134374;
 }
-.chart-bar.series5 { /* Aprovados */
+
+.chart-bar.series5 { 
     -fx-bar-fill: #134374;
 }
-.chart-legend-item-symbol.series0 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series0 { 
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol.series1 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series1 {
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol.series2 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series2 { 
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol.series3 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series3 { 
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol.series4 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series4 {
     -fx-background-color: transparent;
 }
-.chart-legend-item-symbol.series5 { /* Símbolo "Aprovados" */
+
+.chart-legend-item-symbol.series5 { 
     -fx-background-color: transparent;
 }
